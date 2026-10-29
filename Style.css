@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'MyCustomCursive';
+  src: url('Fonts/GreatVibes-Regular.ttf') format('woff2'),
+       url('Fonts/GreatVibes-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+#l1{
+    background-color: rgba(255, 255, 255, 0.603);
+    text-align: center;
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(8px);            
+    max-width: 450px;                       
+    width: 90%;                             
+    margin: 40px auto;                      
+    padding: 30px;                          
+    border-radius: 16px;                  
+}
+#l1 a{
+    color: black;
+    text-decoration: none;
+}
+#i1{
+    background-image: url(Images/Chalkboard\ School\ Doodle\ Pattern.png);
+}
+#l1 h1{
+    font-family:'MyCustomCursive';
+}
+#i2{
+background-image: url(Images/Colorful\ English\ Study\ Desk\ Collage.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+.l2{
+    background-color: rgba(255, 255, 255, 0.603);
+    text-align: center;
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(8px);            
+    max-width: 450px;                       
+    width: 90%;                             
+    margin: 40px auto;                      
+    padding: 30px;                          
+    border-radius: 16px;                  
+}
+.l2 a {
+    color: black;
+     text-decoration: none;
+}
+#n1 ul{
+    background-color: rgba(255, 255, 255, 0.609);
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    text-align: center;
+    align-items: center;          
+    max-width: 450px;                       
+    width: 90%;                             
+    margin: 40px auto;                                                                 
+}
+#n1 ul li{
+    list-style-type: none;
+    display:inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+#n1 ul li a{
+    color: black;
+    text-decoration: none;
+}
+#i3{
+   background-image: url(Images/Arabic\ Lesson\ on\ a\ Chalkboard.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+#n2 ul{
+    background-color: rgba(255, 255, 255, 0.609);
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    text-align: center;
+    align-items: center;          
+    max-width: 450px;                       
+    width: 90%;                             
+    margin: 40px auto;                                                                 
+}
+#n2 ul li{
+    list-style-type: none;
+    display:inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+#n2 ul li a{
+    color: black;
+    text-decoration: none;
+}
+#i4{
+    background-image: url(Images/Holographic\ ICT\ Network\ Circuitscape.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+#i5{
+    background-image: url(Images/Radiant\ Dove\ in\ Golden\ Mosaic\ Rays.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+#i6{
+    background-image: url(Images/Science\ Doodle\ Collage\ Poster.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+#i7{
+    background-image: url(Images/Social\ Studies\ Doodle\ Classroom\ Poster.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
