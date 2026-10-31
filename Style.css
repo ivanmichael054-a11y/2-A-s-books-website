@@ -137,3 +137,10 @@ background-attachment: fixed;
     background-repeat: no-repeat;
     background-attachment: fixed; 
 }
+#i8{
+    background-image: url(Images/Chalkboard\ of\ Mathematical\ Formulas.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
