@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Book preview</title>
+        <script>
+            const books = new Set([
+                "Books/Arabic/Arabic_language_prep2_t1.pdf",
+                "Books/Arabic/Arabic_prep2_t1_Assmt.pdf",
+                "Books/Arabic/إجابة-كتاب-التقييمات-والأداءات-للصف-الثاني-الإعدادي-الترم-الأول-كاملا.pdf",
+                "Books/Arabic/حل كتاب تقييمات لغة عربية الصف الثاني الاعدادي الترم الاول.pdf",
+                "Books/Ol/موقع كورساتى حل_تقييمات_تانية_اعدادي_كاملا_الترم_الاول2027_.pdf",
+                "Books/Ol/book units 4.pdf",
+                "Books/Ol/book units 5 (Repaired) (Repaired) (Repaired) (Repaired) (Repaired) (Repaired).pdf",
+                "Books/Ict/ICT_EN_Prp2_Tr1_compressed.pdf",
+                "Books/Math/Math_en_prep2_t1_Assmt.pdf",
+                "Books/Religion/Cristian_religion_prep2_t1.pdf",
+                "Books/Religion/Islamic_religion_prep2_t1.pdf",
+                "Books/Science/حل كتاب تقييمات ساينس الصف الثاني الاعدادي الترم الاول.pdf",
+                "Books/Science/Science_en_prep2_t1_Assmt.pdf",
+                "Books/Science/المعاصر_ساينس_2_اعدادي_ترم_1_.ذاكرولي.pdf",
+                "Books/Social/Social_studies_prep2_t1.pdf",
+                "Books/Social/🌏2️⃣ إعدادي 📙 تقييمات الوزارة.. دراسات ترم ١-٢٠٢٧.. مستر-رضا نصار ـ عاشق لغة الضاد.pdf"
+            ]);
+            const lfsBooks = new Set([
+                "Books/Arabic/Arabic_language_prep2_t1.pdf",
+                "Books/Science/المعاصر_ساينس_2_اعدادي_ترم_1_.ذاكرولي.pdf"
+            ]);
+            const bookPath = new URLSearchParams(location.search).get("file");
+
+            if (!books.has(bookPath)) {
+                document.addEventListener("DOMContentLoaded", () => {
+                    document.body.textContent = "Book preview not found.";
+                });
+            } else {
+                const host = lfsBooks.has(bookPath)
+                    ? "media.githubusercontent.com/media"
+                    : "raw.githubusercontent.com";
+                const encodedPath = bookPath
+                    .split("/")
+                    .map((segment) => encodeURIComponent(segment))
+                    .join("/");
+                const fileUrl = `https://${host}/ivanmichael054-a11y/2-A-s-books-website/main/${encodedPath}`;
+                const viewerUrl = `https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(fileUrl)}`;
+                window.location.replace(viewerUrl);
+            }
+        </script>
+    </head>
+    <body>Opening book preview...</body>
+</html>
